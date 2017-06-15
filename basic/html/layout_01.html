@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style>
+    /*
+    * '*'의 뜻은 전체 라는 의미: 실제로 많이 사용하는것은 지양
+    간단하게 처리 할 수 있는 기능을 모든 곳곳에 사용해서 무거워지기 때문에.*/
+    
+    *{margin: 0; padding: 0; border: 0;
+      --fontColor:#fff; }
+
+
+    body{background-color:#057; margin:0;}
+    #box{width:600px; height:100px; margin:auto;}
+
+      .out_box{width:inherit; height: 100px;}
+      #headbox{background-color:#f0a;}
+
+      #contentbox{height:auto;}
+
+      /* 
+      * 블럭 요소를 옆으로 나열하기 위해 float기능을 사용한다.
+      * 왼쪽을 기준으로 나열하기 위해서는 flout:lrft;
+      * 오른쪽을 기준으로 나열하기 위해서는 float:light;
+      * 문제점1: 부모요소에 높이값을 설정하면- 넘어가는 사이즈를 설정시 매번 변경
+      * 문제점1: 부모요소에 높이값을 auto로 설정 - 부모의 높이는 0처리(float의 의미)
+      * 해결하기 위한 용어1: clear속성을 이용
+      * 해결하기 위한 용어2: 정의된 이름은 아니지맘 보편적으로 .clearfix의기법
+      * 해결하기위한 용어(방법):css의 추가기능(선택자의 기능)- ::before; :after
+      */
+      
+        #sidebox{
+          width: 200px; height: 300px; float:left; background-color: #333;}
+
+        #databox{
+          width: 400px; height: 150px; float:left; background-color: #3f3;}
+        
+        #databox2{ 
+          width: 400px; height: 150px; float:left; background-color: #fff;}    
+
+        .clearfix::after{content:" "; display:block; width:0; height:0; clear: both;} 
+      #footbox{background-color:#0af;}
+
+  </style>
+
+  <script>
+   // 
+   //:D 
+
+  </script>
+</head>
+
+<body>
+  <div id="box">
+
+    <header id="headbox" class="out_box">
+      headBox
+    </header><!-- #headBox -->
+    <section id="contentbox" class="out_box clearfix">
+      <aside id="sidebox">aside</aside><!--// #sitebox  -->                                            
+      <article id="databox">article</article><!--//#databox -->
+      <article id="databox2">container</article><!--//#databox-->
+    
+      <!-- .clearfif의 이해
+      * 이해1: div코드로 눈에 보이게 만들어서 사용
+      <div class= "clearfix">clearfic위치</div>-->
+      <!--
+      * 이해2: br코드로 변형시켜 사용
+      <br class="clearfix">
+      * 가상선택자(:after)를 사용
+      -->
+       <br class="clearfix">
+
+
+    </section><!-- #contentBox -->
+    <footer id="footbox" class="out_box">
+      footBox
+    </footer><!-- #footBox -->
+
+  
+  </div><!-- // #box -->
+</body>
+</html>
