@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta hrrp-equiv="X-UA-compatible" content="IE=edge">
+  <title>hayoung</title>
+  <style>
+  /* reset.css
+  * 모든 브라우저는
+  * 각자 여백의 크기값을 가진다.
+  * margin, padding -> 초기값을 셋팅 reset.css 
+  * 에릭마이어 reset.css , 보일러 플레이트 
+  * 기존 reset.css 를 사용하는 것도 좋지만
+  * 실무를 하거나 면접을 보게되면. 
+   */
+
+    html,body{width:100%; height:100%; color:#333; font-family:sans-serif;}
+   html,body,div,p,pre,table,thead,tbody,tfoot,ul,ol,li,dl,dt,dd
+   {margin: 0; padding: 0; border: 0; 
+   font-size:100%; color:inherit;}
+   h1,h2,h3,h4,h5,h6{margin: 0; padding: 0; border: 0; color:inherit;}
+    
+    /* list 불릿기호 제거 */
+    ol,ul,li{list-style:none;}
+    /* 링크코드 밑줄 및 글씨색 변경*/
+    a{text-decoration: none; color:#f07;}
+    /* table 초기세팅 */
+    table, thead, tbody, tfoot, tr, td, th{
+      boder:1px solid #333; border-spacing:0; border-collapse:collapse;} 
+    /*버튼 태그 링크모양처리, 배경색상, 테두리변경*/
+    button,
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"]{cursor: pointer; background-color:#ccc;} 
+
+    button{background-color: #f07; color:#fff;}
+    button:hover{background-color:#70f;}
+    button:active{background-color:#07f; }
+
+    /*html5 reset*/
+    header,nav,aside,article,section,footer,main,figure{display: block;
+      margin: 0; padding:0; border: 0; font-siza:100%; color:inherit;}
+
+    /*form reset */
+    input[type="text"], input[type="password"]
+    input[type="search"],input[type="email"], input[type="tel"]{
+      text-indent:5px; text-indent:0.3em;
+    }
+
+  /*disign*/
+    #wrap{width: 100%; height:100%; background-color:#ccc; }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+  <button>text</button>
+  <input type="button" value="input button">
+  <input type="submit" value="input button">
+  </div>
+</body>
+</html>
