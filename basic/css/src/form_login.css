@@ -1,0 +1,29 @@
+/*! form_login_01.css */
+
+body{background-color: #ddd; padding-top:3em;  }
+#wrap{width: 400px; height:450px;
+  margin:0 auto; background-color: #fff;}
+  h1{width: 400px; height: 80px;
+   margin: 0 auto; padding: 10px; box-sizing:border-box;
+  background-color: #dfa; color: #fff; font-size: 2em;}
+  form{width: 100%; height:100%; padding:3em;}
+  #userName{width: 300px;  border:0px; border-bottom: 1px solid #ccc; 
+    box-sizing:border-box;}
+  #pwd{width: 300px;  border:0px; border-bottom: 1px solid #ccc; 
+    box-sizing:border-box;} 
+  fieldset{border:0;}
+  
+  fieldset>div{width: 100%; height:auto; padding:0.5em; box-sizing: border-box;
+    margin-bottom: 0.5em; }
+  userRemember
+
+/*아이디 기억하기 삭제 */
+  .remember{display: none;}
+  .input_box{width:100%; height:100; padding: 0.5em; 
+    box-sizing: border-box; color:#333;}
+    #userRemember:checked + label {color:#adf; font-weight: bold;}
+
+  .login_btn{ width: 300px; background-color:transparent; margin-right: 10px;}
+  input[type="submit"]{float: right; box-sizing: border-box;
+   background-color:#dda; 
+    color:#fff; font-size: 1.2em;}
