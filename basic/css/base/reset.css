@@ -7,6 +7,16 @@
   p,div,pre,form,fieldset,hr{margin: 0; padding: 0;}
   
   ul,ol,li{list-style: none;}
+  a{text-decoration: none; color: #555;}
+  a:hover{color:#a00;}
+
+  button, input{background-color: transparent; border:0;}
+  input[type="text"],input[type="password"],
+  input[tyoe="search"], input[type="email"],input[type="tel"]{
+    border:1px solid #777; text-indent: 5px}
+  
+  button, input[type="submit"],
+  input[type="reset"],input[type="button"]{cursor:pointer;}
 
  /*html5 reset*/
   header,nav,aside,article,section,footer,main,figure{

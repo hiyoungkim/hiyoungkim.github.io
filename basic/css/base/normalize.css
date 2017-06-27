@@ -3,5 +3,5 @@
 
 
 .clearfix:after{content:""; display:block ; width: 0; height: 0; clear: both;}
-.hidden{display: block; width:0; height: 0; overflow: hidden; }
+.hidden{display: inline-block; width:0; height: 0; overflow: hidden; }
 #wrap .first_li{margin-left: 0;}
