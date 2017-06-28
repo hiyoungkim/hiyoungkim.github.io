@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--[if lte IE 9]>
+  <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+  <script type="../ie/ie7.IE9.js"></script>
+  <script type="../ie/cdd3pie/PIE_IE9.js"></script>
+  <![endif]-->
+
+
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/base/normalize.css" />
+  <link rel="stylesheet" href="../fontAwesome/css/font-awesome.min.css" />
+
+  <script src="../js/jquery/jquery-3.2.1.min.js"></script>
+  <script src="../js/jquery/jquery-ui.min.js"></script>
+  <title>this</title>
+
+<style>
+  #wrap{width: 960px; height: auto; min-height: 9.375rem; margin: 0 auto; background-color: #f1f1f1;}
+  h1{width: 100%; height: auto; padding: 1em; box-sizing: border-box; background-color: #0af;}
+  .content{width: 100%; height: auto; border-bottom: 2px solid #07c;}
+  .content>li{width: 100%; height:auto; padding:0.2em 1em; box-sizing: border-box;}
+
+  .single_icon{width: 100%; height: auto;  background-color: #fff; }
+  .first_icon{width: 100%; height:500px; margin-bottom: 1em; background-color: #ccc;
+                background-image: url(../img/icon/home.png);
+                background-repeat: no-repeat;
+                background-position: center;}
+  .second_icon{width: 100%; height: 135px; }
+  .second_icon>li{width: 135px; height: 135px; margin: 0.3em; float: left; background-color: #fa0;background-image: url("../img/icon/colorfulcheck.jpg");background-repeat: no-repeat;}
+    .second_icon>li:first-child{}
+    .second_icon>li:nth-child(2){background-position: right top;}
+    .second_icon>li:nth-child(3){background-position: center;}
+    .second_icon>li:nth-child(4){background-position: right bottom;}
+    .second_icon>li:nth-child(5){background-position: center bottom;}
+    .second_icon>li:nth-child(6){background-position: left center;}
+
+    .third_icon{width: 100%; height: auto ;}
+    .third_icon:after{content: ""; display: block; width: 0; height: 0; clear: both;}
+    .third_icon>li{float: left; margin: 0.5em;
+                    background-image: url("../img/icon/oneIcon.jpg");
+                    background-repeat:no-repeat;}
+    .third_icon>li:nth-child(1){width: 120px; height: 120px; background-position: 0 0;
+                                  transition: all 300ms ease-in;}
+    .third_icon>li:nth-child(1):hover{background-position: left center;}
+    .third_icon>li:nth-child(1):active{background-position: left bottom;}
+    .third_icon>li:nth-child(2){width: 120px; height: 120px; background-position: -250px 0; transition: all 300ms ease-in;}
+    .third_icon>li:nth-child(2):hover{background-position: -250px center;}
+    .third_icon>li:nth-child(2):active{background-position: -250px bottom;}
+    .third_icon>li:nth-child(3){width: 110px; height: 120px; background-position: -640px 0; transition: all 300ms ease-in;}
+    .third_icon>li:nth-child(3):hover{background-position: -640px center;}
+    .third_icon>li:nth-child(3):active{background-position: -640px bottom;}
+    .third_icon>li:nth-child(4){width: 100px; height: 120px; background-position: -1030px 0; transition: all 300ms ease-in;}
+    .third_icon>li:nth-child(4):hover{background-position: -1030px center;}
+    .third_icon>li:nth-child(4):active{background-position: -1030px bottom;}
+    .third_icon>li:nth-child(5){width: 105px; height: 120px; background-position: -1285px 0; transition: all 300ms ease-in;}
+    .third_icon>li:nth-child(5):hover{background-position: -1285px center;}
+    .third_icon>li:nth-child(5):active{background-position: -1285px bottom;}
+
+    .forth_icon{width: 100%; height:auto;}
+      .forth_icon:after{content:""; display: block; clear: both;}
+      .forth_icon>li{width: 30px; height: 28px; background-color: #fa0; margin: 0.5em;  float:left;}
+      .forth_icon>li>a{width: 100%; height: 100%; display:block; 
+                       background-image: url("../img/icon/iconBasic.jpg"); background-repeat: no-repeat;
+                      background-position: -10px -10px;}
+      .forth_icon>li:nth-child(1)>a{background-position: -10px -10px;}
+      .forth_icon>li:nth-child(1)>a{height: 26px; background-position: -86px -50px;}
+      .forth_icon>li{width: 30px; height: 28px; display: block;}
+      .forth_icon>li:nth-child(2)>a{background-position: -86px -50px;}
+
+ 
+</style>
+</head>
+<body>
+  <div id="wrap">
+  <h1>background의 이해</h1>
+  <ul class="content">
+    <li>backgroung-color</li>
+    <li>backgroung-image: url();</li>
+    <li>backgroung-repeat: no-repeat | repeat-x | repeat-y | repeat; </li>
+    <li>backgroung-position</li>
+  </ul>
+  <div class="single_icon">
+      <div class="first_icon">
+        <!-- 첫번째 아이콘(home.png)-->
+      </div>
+      <div class="second_icon">
+        <!-- 두번째 아이콘(colorfilCheck.jpg)-->
+        <li><!-- icon : 1,1 --></li>
+        <li><!-- icon : 3,1 --></li>
+        <li><!-- icon : 2,2 --></li>
+        <li><!-- icon : 3,3--></li>
+        <li><!-- icon : 2,3--></li>
+        <li><!-- icon : 1,2--></li>
+      </div>
+
+      <div class="third_icon">
+      <!--세번째 아이콘(one_icon.jpg)-->
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      </div>
+
+      <ul class="forth_icon hidden_wrap">
+      <!--네번째 아이콘(iconBasic.jpg)-->
+      <li><a href="#"><span class="hidden">1</span></a></li>
+      <li><a href="#"><span class="hidden">2</span></a></li>
+      <li><a href="#"><span class="hidden">3</span></a></li>
+      <li><a href="#"><span class="hidden">4</span></a></li>
+      <li><a href="#"><span class="hidden">5</span></a></li>
+      <li><a href="#"><span class="hidden">6</span></a></li>
+      <li><a href="#"><span class="hidden">7</span></a></li>
+      <li><a href="#"><span class="hidden">8</span></a></li>
+      <li><a href="#"><span class="hidden">9</span></a></li>
+      <li><a href="#"><span class="hidden">10</span></a></li>
+      </ul>
+  </div>
+  </div>
+</body>
+</html>
