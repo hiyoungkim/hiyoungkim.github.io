@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  <!-- 한글사용지정 -->
+<head>
+<!-- metatag -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 익스플로러 가장 최신 버전으로 끌어올림 -->
+<!--[if lte IE 9]>
+  <script src="../../ie/dist/html5shiv/html5shiv.min.js"></script>
+  <script src="../../ie/ie7/IE9.js"></script>
+  <script src="../../ie/css3pie/PIE_IE9.js"></script>
+  <![endif]-->
+  <!-- 조건부주석: 9보다 낮은 버전일 때에 활성화
+    1. html5바디에 구현되는 태그 호환하기 위한 html5shive 
+    2. 선택자 인지하게 만듬.
+    3. css3로 구현되는 
+  -->
+<!-- css관련 세팅하기 -->
+  <link rel="stylesheet" type="text/css" href="../../css/base/reset.css" />
+  <!-- 코드 초기화 -->
+  <link rel="stylesheet" type="text/css" href="../../css/base/normalize.css" />
+  <!-- 지정코드작성 -->
+  <link rel="stylesheet" type="text/css" href="../../fontawesome/css/font-awesome.min.css" />
+  <!-- font를 아이콘화함 -->
+<!-- script불러보기  -->
+  <script src="../../js/jquery/jquery-3.2.1.min.js"></script>
+  <!-- 1. 기본버전 부르고 나서  -->
+  <script src="../../js/jquery/jquery-ui.min.js"></script>
+  <!-- 2. ui를 불러와야 함.  -->
+  <link rel="stylesheet" type="text/css" href="../../css/src" />
+
+<!-- style -->
+  <style>
+
+    #wrap{width:960px; height:1604px; margin:0 auto; background-color:#fff;}
+
+/* headBox____________________________________________________*/
+    #headBox{width:960px; height:92px; padding:17px 6px; box-sizing:border-box; background-color:#fff;}
+  /* h1 */
+    h1{width:102px; height:62px; float:left; 
+      background-image:url("../../img/web_170629/kwater/img/header/logo.jpg");}
+  /* unb */
+    #unb{width:222px; height:18px; margin-bottom:5px; float:right; background-color:#aaa;}
+    #unb>ul{width:100%; height:100%;}
+    #unb>ul>li{float:left; background-repeat:no-repeat;}
+      #unb>ul>li:first-child{width:39px; height:18px;
+        background-image:url("../../img/web_170629/kwater/img/header/unb/unb_1.jpg");}
+      #unb>ul>li:nth-child(2){width:49px; height:18px;
+        background-image:url("../../img/web_170629/kwater/img/header/unb/unb_2.jpg");}
+      #unb>ul>li:nth-child(3){width:56px; height:18px;
+        background-image:url("../../img/web_170629/kwater/img/header/unb/unb_3.jpg");}
+      #unb>ul>li:last-child{width:73px; height:18px;
+        background-image:url("../../img/web_170629/kwater/img/header/unb/unb_4.jpg");}
+  /* gnb */
+    #gnb{width:790px; height:34px; float:right; background-color:#aaa;}
+      #gnb>ul{width:100%; height:100%;}
+    #gnb>ul>li{float:left; background-repeat:no-repeat;}
+      #gnb>ul>li:first-child{width:145px; height:34px; background-color:#fff;}
+      #gnb>ul>li:nth-child(2){width:100px; height:34px; background-color:#fff;}
+      #gnb>ul>li:nth-child(3){width:100px; height:34px; background-color:#fff;}
+      #gnb>ul>li:nth-child(4){width:100px; height:34px; background-color:#fff;}
+      #gnb>ul>li:nth-child(5){width:100px; height:34px; background-color:#fff;}
+      #gnb>ul>li:nth-child(6){width:100px; height:34px; background-color:#fff;}
+      #gnb>ul>li:last-child{width:145px; height:34px; background-color:#fff;}
+
+/* contentBox____________________________________________________*/
+    #contentBox{width:960px; height:1301px;}
+      #bannerBox{width:100%; height:499px; 
+        background-image:url("../../img/web_170629/kwater/img/banner.jpg");
+        background-repeat:no-repeat;}
+
+      #lnb{width:100%; height:99px;
+        background-image:url("../../img/web_170629/kwater/img/lnb/lnb.png");
+        background-repeat:no-repeat;
+        background-position:center;}
+
+      #conBox{width:100%; height:168px; background-color:#fff;}
+        #conBox>ul{width:100%; height:100%;}
+        #conBox>ul>li{width:228px; height:166px; float:left; 
+          background-repeat:no-repeat;}
+          #conBox>ul>li:first-child{
+            background-image:url("../../img/web_170629/kwater/img/content/con_01.png");}
+          #conBox>ul>li:nth-child(2){
+            background-image:url("../../img/web_170629/kwater/img/content/con_02.png");}
+          #conBox>ul>li:nth-child(3){ margin-left:10px;
+            background-image:url("../../img/web_170629/kwater/img/content/con_03.png");}
+          #conBox>ul>li:last-child{ margin-left:10px;
+            background-image:url("../../img/web_170629/kwater/img/content/con_04.png");}
+        
+      #aa{width:100%; height:193px; background-color:#fff;}
+
+      #contentInfo{width:100%; height:77px; background-color:#fff;}
+        #contentInfo>ul{width:100%; height:100%;}
+        #contentInfo>ul>li{width:228px; height:166px; padding:30px; box-sizing:border-box; float:left; margin-right:8px; background-repeat:no-repeat;}
+          #contentInfo>ul>li:first-child{margin-left:10px;
+            background-image:url("../../img/web_170629/kwater/img/content/content_info_1.png");}
+          #contentInfo>ul>li:nth-child(2){
+            background-image:url("../../img/web_170629/kwater/img/content/content_info_2.png");}
+          #contentInfo>ul>li:nth-child(3){
+            background-image:url("../../img/web_170629/kwater/img/content/content_info_3.png");}
+          #contentInfo>ul>li:last-child{
+            background-image:url("../../img/web_170629/kwater/img/content/content_info_4.png");}
+
+      #List{width:100%; height:107px; background-color:#fff;}
+        .list_01{width:20%; height:auto; float:left; margin-left:20px;}
+        .list_02{width:20%; height:auto; float:left;}
+        .list_03{width:50%; height:auto; float:left;}
+          .list_03>.list_04{width:33.333333%; height:auto; float:left;}
+          .list_03>.list_05{width:33.333333%; height:auto; float:left;}
+          .list_03>.list_06{width:33.333333%; height:auto; float:left;}
+
+
+/* footBox____________________________________________________*/
+    #footBox{width:960px; height:211px; 
+      padding:23px 6px; box-sizing:border-box;
+      background-color:#eee;}
+      
+      h2{width:102px; height:62px; float:left; margin-top:30px; background-image:url("../../img/web_170629/kwater/img/footer/h2.jpg");
+        background-repeat: no-repeat;}
+      
+      address{width:648px; height:66px; margin:30px 10px; float:left; background-color:#fff;}
+        address>.address_info{ width:100%; height:100%;}
+        address>.address_info>li{ width:648px; height:20px;}
+          .address_link{width:100%; height:100%;}
+          .address_link>li{width:125px; height:100%; float:left;}
+
+      .foot_logo{width:170px; height:95px; float:right; background-color:#fff;}  
+        .foot_logo>.logo_2{width:81px; height:94px; float:right; background-image:url("../../img/web_170629/kwater/img/footer/mark_01.jpg"); background-repeat: no-repeat;}  
+        .foot_logo>.logo_3{width:89px; height:94px; float:right; background-image:url("../../img/web_170629/kwater/img/footer/mark_02.jpg"); background-repeat: no-repeat;}  
+
+  </style>
+  <title>한국 수자원공사 사이
+<body>트 따라하기 </title>
+</head>
+  <div id="wrap">
+<!-- headBox________________________ -->  
+    <header id="headBox" class="clearfix">
+      <h1><span class="hidden">k-water log</span></h1>
+
+        <nav id="unb" class="hidden_wrap">
+          <ul>
+            <li><a href="#"><span>어린이</span></a></li>
+            <li><a href="#"><span>직원</span></a></li>
+            <li><a href="#"><span>ENGLISH</span></a></li>
+            <li><a href="#"><span>전체메뉴</span></a></li>
+          </ul>
+        </nav> 
+
+        <nav id="gnb">
+          <ul>
+            <li><a href="#">정부3.0/정보공개</a></li>
+            <li><a href="#">고객참여</a></li>
+            <li><a href="#">사업소개</a></li>
+            <li><a href="#">물정보관</a></li>
+            <li><a href="#">새소식</a></li>
+            <li><a href="#">열린채용</a></li>
+            <li><a href="#">k-water소개</a></li>
+          </ul>
+        </nav>
+    </header>
+
+<!-- contentBox________________________ -->
+    <div id="contentBox">
+      <h2 class="hidden">headline2</h2>
+    <!-- bannerBox 이미지-->
+      <section id="bannerBox">
+        <h3 class="hidden">headline3</h3>
+      </section>
+    <!-- lnb 중간 nav바-->
+      <nav id="lnb">
+        <h3 class="hidden">headline3</h3>
+      </nav>
+    <!-- conBox 사각 이미지 4개-->
+      <article id="conBox" class="clearfix">
+        <h3 class="hidden">headline3</h3>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </article>
+    <!-- aa 동영상 어쩌구  -->
+      <article id="aa">
+        <h3 class="hidden">headline3</h3>
+      </article>
+    <!-- contentInfo 배너스러운 사각 이미지 4개 -->
+      <article id="contentInfo" class="clearfix">
+        <h3 class="hidden">headline3</h3>
+        <ul>
+          <li><a href="#"><span>적어야해ㅠ</span></a></li>
+          <li><a href="#"><span>적어야해ㅠ</span></a></li>
+          <li><a href="#"><span>적어야해ㅠ</span></a></li>
+          <li><a href="#"><span>적어야해ㅠ</span></a></li>
+        </ul>
+      </article>
+
+    <!-- List list-->
+      <aticle id="List">  
+        <h3 class="hidden">headline3</h3>
+        <div class="list_01">
+          <h4>고객지원</h4>
+          <ul>
+            <li>전자조달시스템</li>
+            <li>온라인 청약 시스템</li>
+            <li>건설</li>
+            <li>시스템</li>
+          </ul>
+        </div>
+        <div class="list_02">
+          <h4>정보제공</h4>
+          <ul>
+            <li>수백과사전</li>
+            <li>하나</li>
+            <li>둘</li>
+            <li>셋</li>
+          </ul>
+        </div>
+        
+        <div class="list_03">
+          <h4>family site</h4>
+          <ul class="list_04">
+            <li>하나</li>
+            <li>둘</li>
+            <li>글쓰기</li>
+            <li>힘드네</li>
+          </ul>
+          <ul class="list_05">
+            <li>하나</li>
+            <li>둘</li>
+            <li>글쓰기</li>
+            <li>힘드네</li>
+          </ul>
+          <ul class="list_06">
+            <li>하나</li>
+            <li>둘</li>
+            <li>글쓰기</li>
+            <li>힘드네</li>
+          </ul>
+        </div> 
+      </articl>
+    </div>
+
+<!-- footBox________________________ -->
+    <footer id="footBox" class="clearfix">
+      <h2><span class="hidden">headline2</span></h2>
+      <address>
+        <ul class="address_info">
+          <li>
+            <ul class="address_link">
+              <li><a href="#">개인정보처리방침 | </a></li>
+              <li><a href="#"> 업무추진비공개 |</a></li>
+              <li><a href="#">찾아오시는길</a></li>
+            </ul>
+          </li>
+          <li>우편번호306-711 대전광역시 대덕구 신딘진로 200/대표전화:(042)629-3114/고객센터:1577-0600</li>
+          <li>copyright K-water all rights reserved.</li>
+        </ul>
+      </address>
+      <div class="foot_logo clearfix">
+        <div class="logo_2">QR</div>
+        <div class="logo_3">QR</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

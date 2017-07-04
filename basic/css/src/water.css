@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/*! water.css */
+
+#wrap{width: 960px; height: 1604px;  margin: 0 auto; background-color: #fff;}
+  
+  /* headBox */
+  #headBox{width: 960px; height: 92px; padding:17px 6px; background-color: #fff; 
+    box-sizing: border-box; }
+   
+  /* h1 */
+  h1{width: 102px; height: 62px; float: left;margin-right:60px;
+    background-image:url(../../img/kwater/img/header/logo.jpg);}
+  
+  /* unb */  
+  #unb{width: 222px; height: 18px; margin-top: 5px; float: right; }
+    #unb>ul{width: 100%; height: 100%;}
+    #unb>ul>li{float: left; background-repeat: no-repeat;}
+     #unb>ul>li:first-child{width:39px; height: 18px; 
+      background-image:url(../../img/kwater/img/header/unb/unb_1.jpg);background-repeat:no-repeat;}
+    #unb>ul>li:nth-child(2){width: 49px; height: 18px; 
+      background-image:url(../../img/kwater/img/header/unb/unb_2.jpg);background-repeat:no-repeat;}
+    #unb>ul>li:nth-child(3){width: 56px; height: 18px; 
+      background-image:url(../../img/kwater/img/header/unb/unb_3.jpg);background-repeat:no-repeat;}
+    #unb>ul>li:last-child{width: 73px; height: 18px; 
+      background-image:url(../../img/kwater/img/header/unb/unb_4.jpg);background-repeat:no-repeat;}
+
+  /* gnb */
+  #gnb{width:780px; height:34; float: right;}
+    #gnb>ul{width: 100%; height: 100%;}
+  #gnb>ul>li{width: 785px; height: 30px; float:left;background-repeat: no-repeat;}
+    #gnb>ul>li:nth-child(1){width: 130px;background-image:url(../../img/kwater/img/gnb/gnb_01.jpg);background-repeat:no-repeat;}
+    #gnb>ul>li:nth-child(2){width: 70px;background-image:url(../../img/kwater/img/gnb/gnb_02.jpg);background-repeat:no-repeat;}
+    #gnb>ul>li:nth-child(3){width: 65px;background-image:url(../../img/kwater/img/gnb/gnb_03.jpg);background-repeat:no-repeat;}
+    #gnb>ul>li:nth-child(4){width: 65px;background-image:url(../../img/kwater/img/gnb/gnb_04.jpg);background-repeat:no-repeat;}
+    #gnb>ul>li:nth-child(5){width: 55px;background-image:url(../../img/kwater/img/gnb/gnb_05.jpg);background-repeat:no-repeat;}
+    #gnb>ul>li:nth-child(6){width: 65px;background-image:url(../../img/kwater/img/gnb/gnb_06.jpg);background-repeat:no-repeat;}
+    #gnb>ul>li:nth-child(7){width: 100px;background-image:url(../../img/kwater/img/gnb/gnb_07.jpg);background-repeat:no-repeat;}
+ 
+  /*contentBox*/
+  #contentBox{width: 960px; height: 1301px; }
+    #bannerBox{width: 100%; height: 499px;
+      background-image: url(../../img/kwater/img/banner.jpg);
+      background-repeat: no-repeat;}
+
+    #lnb{width: 100%; height: 99px;
+      background-image: url(..);
+      }  
+
+  /*footerBox*/
+  #footerBox{width: 960px; height:209px; }
